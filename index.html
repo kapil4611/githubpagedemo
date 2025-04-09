@@ -3,9 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Birthday Event Management</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+<style>
+    div.scroll-container {
+      background-color: #333;
+      overflow: auto;
+      white-space: nowrap;
+      padding: 10px;
+      width: 500px;
+      /* align-self: center; */
+    }
+    
+    div.scroll-container img {
+      padding: 10px;
+    }
+</style>
 <body>
-    <h1>Kapil</h1>
+    <header>
+        <h1>THE EVENT ZONE </h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#details">Event Details</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to Birthday Event Planning</h2>
+        <p>Celebrate your special day with us!</p>
+    </section>
+
+    <section id="details">
+        <h2>Event Details</h2>
+        <p>We manage everything from venue setup to catering.</p>
+        <ul>
+            <li>Venue Decoration</li>
+            <li>Catering Services</li>
+            <li>Party Activities</li>
+            <li>Guest Management</li>
+        </ul>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <p>See photos from previous birthday events!</p>
+        <!-- Add placeholder or real images -->
+        <!-- <img src="assets/birthday.jpg" alt="Birthday Party" style="width:500px;height:300px;"> -->
+
+        <div class="scroll-container">
+            <img src="assets/evntlogo.jpg" alt="Cinque Terre" style="width:500px;height:300px;">
+            <img src="assets/birthday.jpg" alt="Cinque Terre" style="width:500px;height:300px;">
+            <img src="assets/birthday.jpg" alt="Cinque Terre" style="width:500px;height:300px;">
+            <img src="assets/birthday.jpg" alt="Cinque Terre" style="width:500px;height:300px;">
+        </div>
+    </section>
+      
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <p>Email: eventzone@birthdayplanner.com</p>
+        <p>Mobile: +91 8461007040</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Birthday Event Management. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
